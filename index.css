@@ -1,0 +1,310 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid rgba(0, 0, 0, 0) !important; */
+    box-sizing: border-box;
+}
+
+/*導覽列*/
+.nav {
+    padding:30px;
+    color:#eee;
+}
+
+.nav ul {
+    float: right;
+}
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 50px;
+}
+.nav .logo {
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+.nav a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav a:hover{
+    color:indianred;
+}
+/*內文*/
+.main{
+    
+    width:100%;
+    height: 100vh;
+    background:url(bg-pc.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+
+}
+
+.main .container{
+  
+    height:500px;
+    padding-top: 250px;
+}
+.main .container h1,p{
+    color: #eee;
+    display: block;
+    text-align: center;
+}
+
+.button-star{
+    display: inline-block;
+    width: 200px ;
+    height: 60px ;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    color: rgb(243, 70, 70);
+    border-radius: 60px ;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left:615px;
+}
+.button-star:hover{
+    color:#eee;
+    background-color:rgb(243,70,70);
+
+}
+
+
+/*personal*/  
+.box{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "left right";
+    margin: 20px 0;
+}
+.box h1{ 
+    font-size: 54px;
+}
+.box h1 span{
+    display: block;
+    margin-top:-50px; 
+}
+.box .left{
+    grid-area: left;
+    text-align: center;
+}
+.box .right{
+    grid-area: right;
+    text-align: center;
+}
+.box .picture img{
+    width: 50%;
+}
+
+.box p{
+    font-size: 18px;
+    color: #959595;
+    margin-bottom: 30px;
+    line-height: 2;
+}
+
+/*slill*/
+.Case h1{
+    font-size: 54px;
+}
+.Case h1 span{
+    display:block;
+    margin-top:-50px;
+}
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+  
+.single-chart {
+    width: 33%;
+    justify-content: space-around ;
+}
+  
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+  
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+  
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+  
+@keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+}
+.circular-chart.orange .circle{
+    stroke: #ff9f00;
+}
+.circular-chart.blue .circle {
+    stroke: #3c9ee5;
+}  
+.circular-chart.Darkblue .circle{
+    stroke: rgb(76, 105, 199);
+}
+.circular-chart.red .circle {
+    stroke: rgb(199, 76, 76);
+}
+.circular-chart.green .circle {
+    stroke: rgb(76, 199, 103);
+}
+  
+  
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+.skill-p{
+      font-size: 20px;
+      text-align: center;
+}
+
+/*product*/
+.Collection h1{
+    font-size:54px;
+}
+.Collection h1 span{
+    display:block;
+    margin: -50px;
+}
+
+/*contact*/
+
+.title {
+    text-align: center;
+    margin: 30px 0;
+}
+.title p {
+    padding: 30px;
+    color: #959595;
+}
+
+.contactBg {
+    padding-bottom: 50px;
+}
+.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom:20px; 
+    color: #555;
+}
+.contactBg h1{
+    font-size: 54px; 
+}
+.contactBg h1 span{
+    display:block;
+    margin: -50px;
+}
+
+.contact form {
+    padding: 0 30px;
+}
+
+.contactMessage{
+    font-family: monospace,sans-serif,微軟正黑體;
+    margin:auto auto;
+}
+.contactMessage img{
+    padding: 10px;
+    vertical-align:middle;
+}
+
+.contact #ad,.contact #ph{
+    margin-left:-10px;
+}
+.contactMessage span p{
+    display: inline;
+}
+
+.contact form label, .contact form input, .contact form textarea {
+    width: 100%;
+}
+.contact form label {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.contact form input, .contact form textarea {
+    border: 0.5px solid #ccc;
+    border-radius: 10px;
+}
+.contact form input{
+    height: 30px;
+}
+.contact form input[type="submit"] {
+    margin-top: 30px;
+}
+
+
+
+footer {
+    background-color: rgb(123, 33, 33);
+    padding: 100px 20px;
+}
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    color: #ccc
+}
+.footer h3 {
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.footer ul li a {
+    color: #ccc;
+}
+.footer ul {
+    list-style: none;
+}
+.footer ul li {
+    padding: 10px 0;
+}
+.footer ul li a{
+    text-decoration: none;
+}
+.footer .follow a {
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+}
+
+.footer .follow a img {
+    width: 100%;
+}
+hr {
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 50px auto 0 auto;
+}
+footer .copyright {
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin-top: 50px;
+}
+
