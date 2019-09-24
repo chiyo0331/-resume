@@ -12,15 +12,15 @@
 <body>
   <!--nav-->
   <div class="main">
-    <div class="navbar">
+    <div class="navbar" id="myNavbar">
       <div class="nav"><span class="logo"><a href="index.html"><span class="big">ChiYo</span>Web<span
               class="red">'s</span></span></a>
         <div class="topnav" id="myTopnav">
           <a href="index.html">HOME</a>
-          <a href="#">RESUME</a>
-          <a href="#">SKILLS</a>
-          <a href="#">WORKS</a>
-          <a href="#">CONTACT</a>
+          <a href="#myResume">RESUME</a>
+          <a href="#mySkill">SKILLS</a>
+          <a href="#work">WORKS</a>
+          <a href="#contact">CONTACT</a>
           <a class="icon">
             <i class="fa fa-bars"></i>
           </a>
@@ -31,7 +31,7 @@
       <h1>HELLO! I'M CHI YO WANG</h1>
     </div>
     <div class="arrow-down">
-      <a href="#profile" class="anchor">
+      <a href="#myResume" class="anchor">
         <i class="fa fa-angle-double-down fa-4x" aria-hidden="true"></i>
       </a>
     </div>
@@ -40,7 +40,7 @@
   <!--personal profile-->
   <div class="box" id="box1">
     <div class="box-inner">
-      <div class="contentleft">
+      <div class="contentleft" id="myResume">
         <h1 data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">PERSONAL PROFILE<span><img
               src="pink1.png" alt="border-pk"></span></h1>
         <p data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">
@@ -63,7 +63,7 @@
     <div class="title" id="skill" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">
       <h1>SKILL<span><img src="pink1.png" alt="border-pk"></span></h1>
     </div>
-    <div class="skill">
+    <div class="skill" id="mySkill">
       <div class="flex-wrapper">
         <div class="single-chart" data-aos="fade-right" data-aos-duration="1900">
           <svg viewBox="0 0 36 36" class="circular-chart orange">
@@ -126,15 +126,36 @@
   </div>
   <!--product-->
 
-  <div class="Collection">
+  <div class="portfolio-wrap">
     <div class="title" id="work" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">
       <h1>WORKS<span><img src="pink1.png" alt="border-pk"></span></h1>
-      <div class="spacer"></div>
     </div>
+    <div class="portfolio-content">
+      <ul class="portfolio-list">
+        <li>
+          <a href="#" target="_blank"><img src="https://fakeimg.pl/250x200/ff0000/" alt=""></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img src="https://fakeimg.pl/250x200/ff0000/" alt=""></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img src="https://fakeimg.pl/250x200/ff0000/" alt=""></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img src="https://fakeimg.pl/250x200/ff0000/" alt=""></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img src="https://fakeimg.pl/250x200/ff0000/" alt=""></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img src="https://fakeimg.pl/250x200/ff0000/" alt=""></a>
+        </li>
+      </ul>
+    </div>
+
+    <!--contact-->
+
   </div>
-
-  <!--contact-->
-
   <div class="contactBg">
     <div class="title" id="contact" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">
       <h1>CONTACT<span><img src="pink1.png" alt="border-pk"></span></h1>
@@ -163,41 +184,40 @@
 
       </div>
     </div>
-  </div>
-  <!--footer-->
-  <footer>
-    <div class="footer" data-aos="zoom-in-up" data-aos-delay="0" data-aos-offset="200">
-      <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-offset="200">
-        <h3>LINK</h3>
-        <ul>
-          <li><a href="#">HOME</a>
-          <li><a href="#">RESUME</a>
-          <li><a href="#">SKILLS</a>
-          <li><a href="#">WORKS</a>
-            <a href="#">CONTACT</a>
-        </ul>
+    <!--footer-->
+    <footer>
+      <div class="footer" data-aos="zoom-in-up" data-aos-delay="0" data-aos-offset="200">
+        <div data-aos="zoom-in-up" data-aos-delay="100" data-aos-offset="200">
+          <h3>LINK</h3>
+          <ul>
+            <li><a href="#">HOME</a>
+            <li><a href="#">RESUME</a>
+            <li><a href="#">SKILLS</a>
+            <li><a href="#">WORKS</a>
+              <a href="#">CONTACT</a>
+          </ul>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-delay="200" data-aos-offset="200">
+          <h3>CONTACT</h3>
+          <div class="follow"><a href="#"><img src="icon-fb.png" /></a><a href="#"><img src="icon-ig.png" /></a><a
+              href="#"><img src="icon-mail.png" /></a></div>
+        </div>
       </div>
-      <div data-aos="zoom-in-up" data-aos-delay="200" data-aos-offset="200">
-        <h3>CONTACT</h3>
-        <div class="follow"><a href="#"><img src="icon-fb.png" /></a><a href="#"><img src="icon-ig.png" /></a><a
-            href="#"><img src="icon-mail.png" /></a></div>
-      </div>
-    </div>
-    <hr data-aos="zoom-in-up" data-aos-delay="0" data-aos-offset="100" />
-    <div class="copyright" data-aos="zoom-in-up" data-aos-delay="0" data-aos-offset="100">chiyo &copy; 2019</div>
-  </footer>
-  <img id="btntop" src="arrow-btn.png" alt="回到頁面上方">
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="bagtop.js"></script>
-  <script src="topnav.js"></script>
-  <script>
-    AOS.init({
-      duraction: 3000,
-      offset: 600
-    });
-  </script>
+      <hr data-aos="zoom-in-up" data-aos-delay="0" data-aos-offset="100" />
+      <div class="copyright" data-aos="zoom-in-up" data-aos-delay="0" data-aos-offset="100">chiyo &copy; 2019</div>
+    </footer>
+    <img id="btntop" src="arrow-btn.png" alt="回到頁面上方">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="bagtop.js"></script>
+    <script src="topnav.js"></script>
+    <script>
+      AOS.init({
+        duraction: 3000,
+        offset: 600
+      });
+    </script>
 </body>
 
 </html>

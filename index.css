@@ -25,18 +25,17 @@
 }
 .topnav {
     display: inline;
-    overflow: hidden;
-}
-  
-.topnav a {
     float: right;
-    display: block;
+}
+
+.topnav a {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
+
   
 .topnav a:hover {
     background-color: #eee;
@@ -45,7 +44,18 @@
 .topnav .icon {
     display: none;
 }
-  
+.content{
+    padding: 16px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+
 /*.nav .topnav{
     float: right;
 }
@@ -206,6 +216,7 @@
     padding-right: 40px;
 }
 .box .pictureRight{
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,14 +310,34 @@
       text-align: center;
 }
 
+
 /*product*/
-.Collection h1{
+
+.portfolio-wrap {
+    display: block;
+    margin: 0 auto;
+  }
+.portfolio-wrap h1{
     font-size:54px;
 }
-.Collection h1 span{
+.portfolio-wrap h1 span{
     display:block;
     margin: -50px;
 }
+.portfolio-content {
+
+} 
+.portfolio-list{
+    width: 100%;
+    list-style-type:none;
+    margin: 50px 70px;
+}
+.portfolio-list li{
+    width: 350px;
+    float: left;
+    margin: 50px;
+}
+
 
 /*contact*/
 
@@ -531,4 +562,4 @@ footer .copyright {
         text-align: center;
     }
 
-  }
+}
