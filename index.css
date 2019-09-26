@@ -8,7 +8,7 @@
 
 /*導覽列*/
 .nav {
-    padding:30px;
+    padding:10px;
     color:#eee;
 }
 .nav a{
@@ -23,9 +23,11 @@
     font-size: 36px;
     margin-left: 20px;
 }
+
 .topnav {
     display: inline;
     float: right;
+    margin: 13px;
 }
 
 .topnav a {
@@ -38,23 +40,22 @@
 
   
 .topnav a:hover {
-    background-color: #eee;
     color: indianred;
 }
 .topnav .icon {
     display: none;
 }
-.content{
-    padding: 16px;
-}
+
 .sticky {
     position: fixed;
     top: 0;
+    height: 80px;
     width: 100%;
+    border-bottom:2px solid rgba(94, 92, 92, 0.8);
+    background-color:rgba(92, 92, 92, 0.8); 
+    z-index: 1;
 }
-.sticky + .content {
-    padding-top: 60px;
-}
+
 
 /*.nav .topnav{
     float: right;

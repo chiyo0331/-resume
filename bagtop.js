@@ -11,6 +11,9 @@ $(document).ready(function () {
             $("#btntop").fadeOut(500)
 
         }
+    });
+    $("# ").click(function (e) { 
+        $("html,body").animate({scrollTop:0},500);
 
     });
 });
