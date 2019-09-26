@@ -26,7 +26,6 @@
 
 .topnav {
     display: inline;
-    float: right;
     margin: 13px;
 }
 
@@ -325,9 +324,7 @@
     display:block;
     margin: -50px;
 }
-.portfolio-content {
 
-} 
 .portfolio-list{
     width: 100%;
     list-style-type:none;
